@@ -9,21 +9,56 @@
 	</head>
 	<body>
 	<header>
-		<div class="header-container">
-			<div class="clearfix">
-				<div class="logo-left">
-					<img class="logo" src="images/logo.png">
-					<h1>transla<span>tion</span></h1>
-				</div>
-				<div class="nav-right">
-					<nav>
-						<a class="active" href="#">Home</a>
-						<a href="#">About Us</a>
-					</nav>
+		<div class="header">
+			<div class="header-container">
+				<div class="clearfix">
+					<div class="logo-left">
+						<img class="logo" src="images/logo.png">
+						<h1>transla<span>tion</span></h1>
+					</div>
+					<div class="nav-right">
+						<nav>
+							<a class="active" href="#">Home</a>
+							<a href="#">About Us</a>
+							<button class="header-login">LogIn</button>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="form">
+			<button class="register">SignUp</button>
+			<button class="log-in">LogIn</button>
+			<button class="forget-pssw">Forget Password</button>
+			<button class="facebook-btn"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</button>
+			<i class="fa fa-times" aria-hidden="true"></i>
+			<form class="signup_form">
+				<label for="username">Your username</label>
+				<input id="username" type="text" name="txt" placeholder="username"><i class="fa fa-user" aria-hidden="true"></i>
+				<label for="email">Your email</label>
+				<input id="email" type="email" name="mail" placeholder="username@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+				<label for="pssw">Your password</label>
+				<input id="pssw" type="password" name="pssw" placeholder="password"><i class="fa fa-key" aria-hidden="true"></i>
+				<label for="confirm-pssw">Please confirm your password</label>
+				<input id="confirm-pssw" type="password" name="pssw" placeholder="confirm password"><i class="fa fa-key key-2" aria-hidden="true"></i>
+				<label class="forgot-pssw">I agree with terms and conditions
+					<input id="forget-pssw" type="checkbox" name="box">
+					<span class="agree"></span>
+				</label>
+				<input id="submit" type="submit" name="submit" value="SignUp">
+			</form>
+			<div class="login_form_container">
+				<form class="login_form">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="email" name="mail" placeholder="email">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<input type="password" name="pssw" placeholder="password">
+					<button class="log-in-two">LogIn</button>
+				</form>
+			</div>
+		</div>
 	</header>
-
+	<script src="js/jquery-1.8.0.min.js"></script>
+	<script src="js/english.js"></script>
 	</body>
 </html>

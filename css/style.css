@@ -58,39 +58,53 @@ table {
   font-weight: normal;
   font-style: normal; }
 header {
-  background-image: url(../images/bg1.jpg);
+  background-image: url(../images/keyboard.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 335px; }
-  header .header-container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 50px; }
-    header .header-container .logo-left {
-      float: left; }
-      header .header-container .logo-left h1 {
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 30px;
-        display: inline-block; }
-        header .header-container .logo-left h1 span {
+  height: 760px;
+  position: relative; }
+  header .header {
+    border-bottom: 1px solid #757575;
+    padding: 30px; }
+    header .header .header-container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto; }
+      header .header .header-container .logo-left {
+        float: left; }
+        header .header .header-container .logo-left h1 {
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 30px;
+          display: inline-block;
+          vertical-align: top;
+          padding-top: 20px;
+          padding-left: 10px; }
+          header .header .header-container .logo-left h1 span {
+            color: #15c3cb; }
+      header .header .header-container .nav-right {
+        float: right;
+        margin-top: 40px; }
+        header .header .header-container .nav-right a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 10px;
+          cursor: pointer;
+          transition: all 0.5s; }
+          header .header .header-container .nav-right a:hover {
+            color: #15c3cb; }
+        header .header .header-container .nav-right .header-login {
+          background: #fff;
+          border: 1px solid #fff;
+          color: #15c3cb;
+          text-transform: uppercase;
+          font-size: 17px;
+          padding: 10px;
+          cursor: pointer; }
+        header .header .header-container .nav-right .active {
           color: #15c3cb; }
-    header .header-container .nav-right {
-      float: right;
-      margin-top: 40px; }
-      header .header-container .nav-right a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        text-transform: uppercase;
-        padding: 10px;
-        cursor: pointer;
-        transition: all 0.5s; }
-        header .header-container .nav-right a:hover {
-          color: #15c3cb; }
-      header .header-container .nav-right .active {
-        color: #15c3cb; }
 
 body {
   font-family: Roboto-regular; }
@@ -102,5 +116,216 @@ body {
   content: " ";
   clear: both;
   height: 0; }
+
+.form {
+  background: #fff;
+  width: 350px;
+  position: absolute;
+  left: 40%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  top: 186px;
+  box-shadow: 0 4px 9px rgba(3, 3, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.65);
+  display: none; }
+  .form .register {
+    background: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: #15c3cb;
+    position: absolute;
+    top: -43px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 12px 7px;
+    font-size: 15px;
+    cursor: pointer; }
+  .form .log-in {
+    background: #15c3cb;
+    border: 1px solid #15c3cb;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: -43px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 12px 7px;
+    font-size: 15px;
+    cursor: pointer;
+    left: 84px; }
+  .form .forget-pssw {
+    background: #15c3cb;
+    border: 1px solid #15c3cb;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: -43px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 12px 7px;
+    font-size: 15px;
+    cursor: pointer;
+    left: 158px; }
+  .form .facebook-btn {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 11px;
+    width: 150px;
+    padding: 6px 0px 6px 40px;
+    background: linear-gradient(to right, #c6c6c6 32px, #ddd 30px);
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    cursor: pointer; }
+  .form .fa-facebook {
+    color: #15c3cb;
+    font-size: 20px;
+    position: absolute;
+    left: 22px; }
+    .form .fa-facebook:after {
+      content: '';
+      border-right: 1px solid #757575;
+      position: absolute;
+      left: 12px;
+      height: 29px;
+      padding-left: 10px;
+      top: -6px; }
+  .form .fa-times {
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    left: 310px;
+    top: 13px;
+    opacity: 0.4;
+    transition: 0.5s; }
+    .form .fa-times:hover {
+      opacity: 0.8; }
+  .form .signup_form {
+    padding: 10px;
+    margin-top: 5px; }
+    .form .signup_form label {
+      color: #15c3cb;
+      font-size: 15px;
+      vertical-align: -webkit-baseline-middle; }
+    .form .signup_form input[type="checkbox"] {
+      display: none; }
+      .form .signup_form input[type="checkbox"]:checked ~ .agree:after {
+        opacity: 1; }
+    .form .signup_form .forgot-pssw {
+      position: relative;
+      padding-left: 10px;
+      vertical-align: text-bottom; }
+    .form .signup_form .agree {
+      float: left;
+      content: "";
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      border: 1px solid #b3b3b3;
+      display: inline-block;
+      vertical-align: text-top;
+      cursor: pointer; }
+      .form .signup_form .agree:after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 10px;
+        border: solid #15c3cb;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0px;
+        left: -12px;
+        cursor: pointer;
+        opacity: 0; }
+    .form .signup_form input {
+      border: 1px solid #b3b3b3;
+      display: block;
+      width: 325px;
+      padding: 10px 0px;
+      margin: 8px 0px;
+      outline: none; }
+    .form .signup_form #submit {
+      width: 70px;
+      background: #15c3cb;
+      border: 1px solid #15c3cb;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      float: right;
+      margin-top: 25px;
+      box-shadow: 0 4px 9px rgba(3, 3, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.65); }
+    .form .signup_form input::placeholder {
+      padding-left: 32px; }
+    .form .signup_form .fa-user {
+      position: absolute;
+      top: 92px;
+      left: 20px;
+      color: #15c3cb; }
+    .form .signup_form .fa-envelope {
+      position: absolute;
+      top: 165px;
+      left: 20px;
+      color: #15c3cb; }
+    .form .signup_form .fa-key {
+      position: absolute;
+      top: 241px;
+      left: 20px;
+      color: #15c3cb; }
+    .form .signup_form .key-2 {
+      position: absolute;
+      top: 313px;
+      color: #15c3cb; }
+  .form .login_form_container {
+    max-width: 317px;
+    margin: 0 auto;
+    display: none; }
+    .form .login_form_container.show_login {
+      display: block; }
+    .form .login_form_container .login_form {
+      margin: 50px 50px; }
+      .form .login_form_container .login_form input {
+        border: 1px solid #b3b3b3;
+        display: block;
+        width: 170px;
+        padding: 10px 10px;
+        margin: 17px 0px;
+        outline: none; }
+      .form .login_form_container .login_form input::placeholder {
+        padding-left: 30px; }
+      .form .login_form_container .login_form .fa-user {
+        position: absolute;
+        top: 98px;
+        left: 80px;
+        color: #15c3cb; }
+      .form .login_form_container .login_form .fa-envelope {
+        position: absolute;
+        top: 153px;
+        left: 80px;
+        color: #15c3cb; }
+      .form .login_form_container .login_form .log-in-two {
+        background: #15c3cb;
+        border: 1px solid #15c3cb;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 5px;
+        padding: 12px 7px;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 130px; }
+
+.show {
+  display: block;
+  transition: 0.5s ease-out; }
+
+ /*.login_form {
+	.facebook-btn {
+		margin-left: 100px;
+	}
+	.fa-facebook {
+		left: 110px;
+	}
+}
+*/
 
 /*# sourceMappingURL=style.css.map */

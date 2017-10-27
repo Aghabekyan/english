@@ -1,0 +1,242 @@
+.form {
+		background: #fff;
+		width: 350px;
+		position: absolute;
+		left: 40%;
+		border-bottom-left-radius: 5px; 
+		border-bottom-right-radius: 5px; 
+		border-top-right-radius: 5px; 
+		top: 186px;
+		box-shadow: 0 4px 9px rgba(3, 3, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.65);
+		display: none;
+	.register {
+		background: #fff;
+		border: 1px solid #fff;
+		text-transform: uppercase;
+		color: #15c3cb;
+		position: absolute;
+		top: -43px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding: 12px 7px;
+		font-size: 15px;
+		cursor: pointer;
+	}
+	.log-in {
+		background: #15c3cb;
+		border: 1px solid #15c3cb;
+		text-transform: uppercase;
+		color: #fff;
+		position: absolute;
+		top: -43px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding: 12px 7px;
+		font-size: 15px;
+		cursor: pointer;
+		left: 84px;
+	}
+	.forget-pssw {
+		background: #15c3cb;
+		border: 1px solid #15c3cb;
+		text-transform: uppercase;
+		color: #fff;
+		position: absolute;
+		top: -43px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding: 12px 7px;
+		font-size: 15px;
+		cursor: pointer;
+		left: 158px;
+	}
+	.facebook-btn {
+		font-size: 15px;
+		margin-top: 8px;
+    margin-left: 11px;
+    width: 150px;
+    padding: 6px 0px 6px 40px;
+    background: linear-gradient( to right, #c6c6c6 32px , #ddd 30px);
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    cursor: pointer;
+	}
+	.fa-facebook {
+		color: #15c3cb;
+		font-size: 20px;
+		position: absolute;
+		left: 22px;
+		&:after {
+			content: '';
+			border-right: 1px solid #757575;
+			position: absolute;
+			left: 12px;
+			height: 29px;
+			padding-left: 10px;
+			top: -6px;
+		}
+	}
+	.fa-times {
+		position: absolute;
+		color: #000;
+		font-size: 20px;
+		cursor: pointer;
+		left: 310px;
+		top: 13px;
+		opacity: 0.4;
+		transition: 0.5s;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	.signup_form {
+		padding: 10px;
+		margin-top: 5px;
+		label {
+			color: #15c3cb;
+			font-size: 15px;
+			vertical-align: -webkit-baseline-middle;
+		}
+		input[type="checkbox"]  {
+			display: none;
+			&:checked ~.agree:after {
+				opacity: 1;
+			}
+		}
+		.forgot-pssw {
+			position: relative;
+			padding-left: 10px;
+			vertical-align: text-bottom;
+	}
+	.agree {
+		float: left;
+		content: "";
+		width: 15px;
+		height: 15px;
+		background: #fff;
+		border: 1px solid #b3b3b3;
+		display: inline-block;
+		vertical-align: text-top;
+		cursor: pointer;
+  		&:after {
+  		  content: '';
+			  display: block;
+			  width: 6px;
+			  height: 10px;
+			  border: solid #15c3cb;
+			  border-width: 0 2px 2px 0;
+			  transform: rotate(45deg);
+			  position: absolute;
+				top: 0px;
+				left: -12px;
+				cursor: pointer;
+				opacity: 0;
+  		}
+		}
+		input {
+			border: 1px solid #b3b3b3;
+			display: block;
+			width: 325px;
+			padding: 10px 0px;
+			margin: 8px 0px;
+			outline: none;
+		}
+		#submit {
+			width: 70px;
+			background: #15c3cb;
+			border: 1px solid #15c3cb;
+			color: #fff;
+			font-size: 15px;
+			cursor: pointer;
+			float: right;
+			margin-top: 25px;
+			box-shadow: 0 4px 9px rgba(3, 3, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.65);
+		}
+		input::placeholder {
+			padding-left: 32px;
+		}
+		.fa-user {
+			position: absolute;
+			top: 92px;
+    	left: 20px;
+    	color: #15c3cb;
+		}
+		.fa-envelope {
+			position: absolute;
+			top: 165px;
+    	left: 20px;
+    	color: #15c3cb;
+		}
+		.fa-key {
+			position: absolute;
+			top: 241px;
+    	left: 20px;
+    	color: #15c3cb;
+		}
+		.key-2 {
+			position: absolute;
+			top: 313px;
+			color: #15c3cb;
+		}
+	}
+	.login_form_container {
+		max-width: 317px;
+		margin: 0 auto;
+		display: none;
+		&.show_login {
+			display: block;
+		}
+		.login_form {
+			margin: 50px 50px;
+			input {
+			border: 1px solid #b3b3b3;
+			display: block;
+			width: 170px;
+			padding: 10px 10px;
+			margin: 17px 0px;
+			outline: none;
+			}
+			input::placeholder {
+			padding-left: 30px;
+		}
+		.fa-user {
+			position: absolute;
+			top: 98px;
+    	left: 80px;
+    	color: #15c3cb;
+		}
+		.fa-envelope {
+			position: absolute;
+			top: 153px;
+    	left: 80px;
+    	color: #15c3cb;
+		}
+		.log-in-two {
+		background: #15c3cb;
+		border: 1px solid #15c3cb;
+		text-transform: uppercase;
+		color: #fff;
+		border-radius: 5px;
+		padding: 12px 7px;
+		font-size: 15px;
+		cursor: pointer;
+		margin-left: 130px;
+	}
+		}
+	}
+}
+.show {
+	display: block;
+	transition: 0.5s ease-out;
+} 
+
+
+ /*.login_form {
+	.facebook-btn {
+		margin-left: 100px;
+	}
+	.fa-facebook {
+		left: 110px;
+	}
+}
+*/
